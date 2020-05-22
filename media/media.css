@@ -1,0 +1,28 @@
+@media screen and (max-width: 936px){
+
+    .main-nav__list {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    ::before, ::after {
+        display: none;
+    }
+
+    .review h3 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    form {
+        height: 100vw;
+    }
+}
