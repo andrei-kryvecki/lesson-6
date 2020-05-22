@@ -324,7 +324,7 @@ textarea {
     margin-top: 1em;
     cursor: pointer;
     position: relative;
-    margin-top: 3em;
+    margin-top: 2vw;
 }
 
 .form__btn:hover {
