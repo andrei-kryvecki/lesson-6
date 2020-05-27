@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +14,7 @@ body {
 }
 
 .container {
-    width: 70vw;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -48,7 +52,7 @@ header {
 
 .logo {
     font-family: Cherry Swash;
-    font-size: 2.5rem;
+    font-size: calc(2.5rem - 2.5rem * 0.7 + 2vw);
     margin: 0.5em 0;
 }
 
@@ -59,7 +63,7 @@ header {
 }
 
 .main-nav__item {
-    font-size: 1.125rem;
+    font-size: calc(1.125rem - 1.125rem * 0.4 + 0.5vw);
 }
 
 .main-nav__item:not(:first-child)::before {
@@ -86,7 +90,7 @@ header {
     display: none;
     align-items: center;
     position: fixed;
-    top: 35px;
+    top: 2.5vw;
     right: 20px;
     width: 26px;
     height: 26px;
@@ -118,25 +122,27 @@ header {
 .banner {
     background: url(../img/background-banner.png) center center no-repeat;
     background-size: cover;
-    padding: 13em 0 2em 0;
+    padding: 0 0 2em 0;
 }
 
 .banner h1 {
     max-width: 12em;
-    font-size: 2.75rem;
+    font-size: calc(2.75rem - 2.75rem * 0.4 + 1vw);
     text-transform: uppercase;
     color: #E4E4E4;
     margin: 0 auto;
+    padding-top: 5.5em;
 }
 
 .banner__btn {
-    font-size: 1.875rem;
+    font-size: calc(1.875rem - 1.875rem * 0.4 + 0.5vw);
     border: 2px solid #FFFFFF;
     border-radius: 5px;
     background: linear-gradient(#ffffff11, #ffffff11);
     color: #E4E4E4;
     padding: 0.2em 1.4em;
-    margin: 1em auto 3em auto;
+    margin: 1em auto 4em auto;
+    cursor: pointer;
 }
 
 .banner__btn:hover {
@@ -152,6 +158,7 @@ header {
     width: 6em;
     justify-content: space-between;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .dot {
@@ -182,19 +189,18 @@ header {
 
 .advantages h2 {
     max-width: 25em;
-    font-size: 1.875em;
+    font-size: calc(1.875rem - 1.875rem * 0.2 + 0.3vw);
     font-weight: lighter;
     color:#4C505D;
 }
 
 .advantages p {
-    font-size: 0.875rem;
+    font-size: calc(0.875rem - 0.875rem * 0.2 + 0.4vw);
     color:#4C505D;
     margin: 4em auto 6em auto;
 }
 
 .icon {
-    width: 50vw;
     display: flex;
     justify-content: space-between;
 }
@@ -208,7 +214,8 @@ header {
 .icon__planet {
     width: 4em;
     height: 4em;
-    background: url(../img/icon-planet.png) center center no-repeat;  
+    background: url(../img/icon-planet.png) center center no-repeat; 
+    padding: 0 7.4em; 
 }
 
 .icon__suitcase {
@@ -258,14 +265,14 @@ header {
 
 .review h3 {
     display: none;
-    font-size: 1,625rem;
+    font-size: calc(1.625rem - 1.625rem * 0.4 + 0.5vw);
     font-weight: bold;
     color: #ffffff;
     margin-top: 1em;
 }
 
 .review p {
-    font-size: 1.125rem;
+    font-size: calc(1.125rem - 1.125rem * 0.1 + 0.3vw);
     font-weight: lighter;
     color: #FFFFFF;
     margin-top: 3em;
@@ -324,7 +331,7 @@ textarea {
     margin-top: 1em;
     cursor: pointer;
     position: relative;
-    margin-top: 1vw;
+    margin-top: 2vw;
 }
 
 .form__btn:hover {
@@ -351,6 +358,7 @@ textarea {
 
 footer {
     display: flex;
+    font-size: calc(0.875rem - 0.875rem * 0.2 + 0.2vw);
     align-items: center;
     justify-content: center;
     background-color: #00D089;
@@ -358,5 +366,6 @@ footer {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 
 
